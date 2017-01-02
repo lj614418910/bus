@@ -1,28 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <Hello></Hello>
+    {{bus}}
   </div>
 </template>
 
-<script>
-import Hello from './components/Hello'
+<script type="text/ecmascript-6">
 
 export default {
   name: 'app',
   components: {
-    Hello
+  },
+  data() {
+    return {
+      bus: 'bus-app'
+    }
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="stylus" rel="stylesheet/stylus">
+
 </style>
