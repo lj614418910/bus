@@ -15,6 +15,24 @@ var port = process.env.PORT || config.dev.port
 var proxyTable = config.dev.proxyTable
 
 var app = express()
+
+// 获取后台数据
+var appData = require('../data.json');
+var city = appData.city["哈尔滨"];
+var cityName = city.name;
+var busLines = city.busLines;
+var apiRoutes = express.Router();
+apiRoutes.get('/busLines', function (req,res){
+  res.json({
+    errno: 0,
+    data: {cityName:cityName,busLines: busLines}
+  });
+});
+app.use('/api', apiRoutes);
+
+// 获取后台数据
+
+
 var compiler = webpack(webpackConfig)
 
 var devMiddleware = require('webpack-dev-middleware')(compiler, {

@@ -1,0 +1,149 @@
+{
+  "city":{
+    "哈尔滨": {
+      "name": "哈尔滨",
+      "description": "哈尔滨公交线路",
+      "busLines":[
+        {
+          "name" : "101",
+          "direction" : true,
+          "StationNumber" : 12,
+          "NumCar" : 5,
+          "Station" : [
+            {"name":"甲站1","km":0},
+            {"name":"甲站2","km":0.5},
+            {"name":"甲站3","km":1.25},
+            {"name":"甲站4","km":1.66},
+            {"name":"甲站5","km":2.01},
+            {"name":"甲站6","km":2.5},
+            {"name":"甲站7","km":3.22},
+            {"name":"甲站8","km":4},
+            {"name":"甲站9","km":4.44},
+            {"name":"甲站10","km":4.89},
+            {"name":"甲站11","km":5.24},
+            {"name":"甲站12","km":5.89}
+          ]
+        },
+        {
+          "name" : "102",
+          "direction" : true,
+          "StationNumber" : 12,
+          "NumCar" : 5,
+          "Station" : [
+            {"name":"乙站1","km":0},
+            {"name":"乙站2","km":0.4},
+            {"name":"乙站3","km":1.05},
+            {"name":"乙站4","km":1.6},
+            {"name":"甲站5","km":1.99},
+            {"name":"乙站5","km":2.4},
+            {"name":"乙站6","km":2.77},
+            {"name":"乙站7","km":3.00},
+            {"name":"乙站8","km":4.54},
+            {"name":"乙站9","km":4.88},
+            {"name":"乙站10","km":5.22},
+            {"name":"乙站11","km":5.6}
+          ]
+        },
+        {
+          "name" : "103",
+          "direction" : true,
+          "StationNumber" : 12,
+          "NumCar" : 5,
+          "Station" : [
+            {"name":"丙站1","km":0},
+            {"name":"甲站10","km":0.5},
+            {"name":"丙站2","km":0.9},
+            {"name":"丙站3","km":1.25},
+            {"name":"丙站4","km":1.56},
+            {"name":"丙站5","km":2.01},
+            {"name":"丙站6","km":2.44},
+            {"name":"丙站7","km":3.22},
+            {"name":"丙站8","km":4},
+            {"name":"丙站9","km":4.49},
+            {"name":"丙站10","km":4.99},
+            {"name":"乙站11","km":5.24}
+          ]
+        },
+        {
+          "name" : "104",
+          "direction" : true,
+          "StationNumber" : 13,
+          "NumCar" : 5,
+          "Station" : [
+            {"name":"丁站1","km":0},
+            {"name":"甲站10","km":0.44},
+            {"name":"丁站2","km":0.88},
+            {"name":"丁站3","km":1.33},
+            {"name":"丁站4","km":1.77},
+            {"name":"丁站5","km":2.30},
+            {"name":"丁站6","km":2.88},
+            {"name":"丁站7","km":3.22},
+            {"name":"丁站8","km":3.66},
+            {"name":"乙站9","km":4.22},
+            {"name":"丁站9","km":4.54},
+            {"name":"丁站10","km":4.89},
+            {"name":"丁站11","km":5.34}
+          ]
+        },
+        {
+          "name" : "105",
+          "direction" : true,
+          "StationNumber" : 13,
+          "NumCar" : 5,
+          "Station" : [
+            {"name":"戊站1","km":0},
+            {"name":"戊站2","km":0.5},
+            {"name":"戊站3","km":1.25},
+            {"name":"戊站4","km":1.66},
+            {"name":"戊站5","km":2.01},
+            {"name":"乙站6","km":2.5},
+            {"name":"戊站6","km":2.88},
+            {"name":"丁站6","km":3.22},
+            {"name":"戊站7","km":3.79},
+            {"name":"戊站8","km":4},
+            {"name":"戊站9","km":4.44},
+            {"name":"戊站10","km":4.89},
+            {"name":"丙站6","km":5.33}
+          ]
+        }
+      ],
+      "bus" : {
+        "101":[
+          {"name": "甲车1", "afterStation":"甲站4", "direction":false},
+          {"name": "甲车2", "afterStation":"甲站5", "direction": true},
+          {"name": "甲车3", "afterStation":"甲站7", "direction": false},
+          {"name": "甲车4", "afterStation":"甲站9", "direction": true},
+          {"name": "甲车5", "afterStation":"甲站12", "direction": false}
+        ],
+        "102":[
+          {"name": "乙车1", "afterStation":"乙站3", "direction":false},
+          {"name": "乙车2", "afterStation":"乙站4", "direction": true},
+          {"name": "乙车3", "afterStation":"乙站7", "direction": false},
+          {"name": "乙车4", "afterStation":"乙站8", "direction": true},
+          {"name": "乙车5", "afterStation":"乙站10", "direction": true}
+        ],
+        "103":[
+          {"name": "丙车1", "afterStation":"甲站10", "direction":false},
+          {"name": "丙车2", "afterStation":"丙站2", "direction": true},
+          {"name": "丙车3", "afterStation":"丙站3", "direction": true},
+          {"name": "丙车4", "afterStation":"丙站7", "direction": false},
+          {"name": "丙车5", "afterStation":"丙站9", "direction": true}
+        ],
+        "104":[
+          {"name": "丁车1", "afterStation":"甲站10", "direction":true},
+          {"name": "丁车2", "afterStation":"丁站3", "direction": true},
+          {"name": "丁车3", "afterStation":"丁站5", "direction": true},
+          {"name": "丁车4", "afterStation":"丁站8", "direction": false},
+          {"name": "丁车5", "afterStation":"丁站9", "direction": false}
+        ],
+        "105":[
+          {"name": "戊车1", "afterStation":"戊站3", "direction":false},
+          {"name": "戊车2", "afterStation":"戊站4", "direction": true},
+          {"name": "戊车3", "afterStation":"戊站6", "direction": true},
+          {"name": "戊车4", "afterStation":"戊站9", "direction": false},
+          {"name": "戊车5", "afterStation":"戊站10", "direction": false}
+        ]
+      }
+    }
+  }
+}
