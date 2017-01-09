@@ -145,7 +145,7 @@ export default {
       this.showList.positive = this.showList.bus.filter((item) => item.direction === true);
       this.detailShow = true;
     },
-    hideDetail(index) {
+    hideDetail() {
       this.showList = {};
       this.detailShow = false;
     },
@@ -157,7 +157,6 @@ export default {
 
         }
       })
-      console.log(this.showList.Station[i].positive)
       if(this.showList.Station[i].positive.length === 0){
         return false
       }
@@ -171,7 +170,6 @@ export default {
 
         }
       })
-      console.log(this.showList.Station[i].reserve)
       if(this.showList.Station[i].reserve.length === 0){
         return false
       }

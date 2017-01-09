@@ -48,6 +48,7 @@ export default {
   .wrapper
     width: 100%
     background: #3385ff
+    overflow: hidden
     .tab
       display: flex
       width: 100%
